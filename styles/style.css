@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    
 }
 
 main {
@@ -28,10 +28,11 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: darkslategray;
 }
 
 section {
-    background-color: var(--color5);
+    background-color: rgb(85, 85, 85);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -48,7 +49,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: rgb(85, 85, 85);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -56,13 +57,13 @@ header {
 footer {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: rgb(85, 85, 85);
     box-shadow: var(--shadow);
 }
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -82,16 +83,6 @@ p {
     margin: var(--gutter);
 }
   
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
   
   @keyframes pulse {
     20% {
@@ -110,4 +101,24 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
+  }
+
+  #guess-button {
+      height: 4rem;
+      border-radius: 30px;
+      background-color: rgb(77, 143, 143);
+      color: white;
+      border-width: 5px;
+      border-color: black;
+  }
+  .text-content{
+      color: white;
+      font-weight: 3rem;
+  }
+  #reset-button {
+      border-radius: 30%;
+      background-color: rgb(77, 143, 143);
+      color: white;
+      border-width: 2px;
+      border-color: black;
   }
