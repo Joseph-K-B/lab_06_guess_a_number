@@ -4,13 +4,15 @@ const guessFeedback = document.getElementById('guess-feedback');
 const guessInput = document.getElementById('guess-input');
 // initialize state
 let guessNumber = Math.floor(Math.random() * 20);
-let guessCount = 4;
+let guessCount = 3;
 // set event listeners 
 guessBtn.addEventListener('click', () => {
     if (guessCount === 0){
         guessBtn.disabled = true;
+        return guessFeedback.textContent = 'Try again';
     }
     if (Number(guessInput.value) === guessNumber) {
+        guessBtn.disabled = true;
         return guessFeedback.textContent = 'You guessed right';
     }
     else if (Number(guessInput.value) > guessNumber) {
@@ -18,7 +20,7 @@ guessBtn.addEventListener('click', () => {
         return guessFeedback.textContent = 'the number is less than your guess';
     }
     else (Number(guessInput.value) < guessNumber);
-guessCount--;
+    guessCount--;
     return guessFeedback.textContent = 'the number is greater than your guess';
 });
 
