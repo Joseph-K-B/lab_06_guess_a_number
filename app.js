@@ -2,7 +2,7 @@
 const guessBtn = document.getElementById('guess-button');
 const guessFeedback = document.getElementById('guess-feedback');
 const guessInput = document.getElementById('guess-input');
-const resetBtn = document.getElementById('reset-button');
+// const resetBtn = document.getElementById('reset-button');
 // initialize state
 let guessNumber = Math.floor(Math.random() * 20);
 let guessCount = 3;
