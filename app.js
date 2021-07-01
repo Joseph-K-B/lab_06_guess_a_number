@@ -4,8 +4,9 @@ const guessFeedback = document.getElementById('guess-feedback');
 const guessInput = document.getElementById('guess-input');
 // const resetBtn = document.getElementById('reset-button');
 // initialize state
-let guessNumber = Math.floor(Math.random() * 20);
+let guessNumber = Math.ceil(Math.random() * 20);
 let guessCount = 3;
+console.log(guessNumber);
 // set event listeners 
 guessBtn.addEventListener('click', () => {
     if (guessCount === 0){
